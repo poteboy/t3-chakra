@@ -8,6 +8,6 @@ export default trpcNext.createNextApiHandler({
   onError({ error }) {
     if (error.code === "INTERNAL_SERVER_ERROR")
       console.error("予期せぬエラーがおきました", error);
-    else console.error("何もわからん");
+    else console.error(error);
   },
 });
