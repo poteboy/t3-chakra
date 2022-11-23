@@ -6,7 +6,7 @@ const withImages = require("next-images");
 
 module.exports = withImages(
   withBundleAnalyzer({
-    pageExtensions: ["page.tsx"],
+    // pageExtensions: ["page.tsx"], これがあると動かない
     images: {
       disableStaticImages: true,
     },
