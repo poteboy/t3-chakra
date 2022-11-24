@@ -5,7 +5,7 @@ import * as t from "@trpc/server";
 
 export const uesrRouter = createRouter().mutation("register-user", {
   input: createUserSchema,
-  //   output: createUserOutputSchema,
+  // output: createUserOutputSchema,
   resolve: async ({ ctx, input }) => {
     const { email, name } = input;
     try {
@@ -14,6 +14,7 @@ export const uesrRouter = createRouter().mutation("register-user", {
           email,
         },
       });
+      return user;
     } catch (e) {
       if (e instanceof PrismaClientKnownRequestError) {
         if (e.code === "P200P")
