@@ -3299,6 +3299,11 @@ prettier@^2.7.1:
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.8.0.tgz#c7df58393c9ba77d6fba3921ae01faf994fb9dc9"
   integrity sha512-9Lmg8hTFZKG0Asr/kW9Bp8tJjRVluO8EJQVfY2T7FMw9T5jy4I/Uvx0Rca/XWf50QQ1/SS48+6IJWnrb+2yemA==
 
+prisma-repl@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/prisma-repl/-/prisma-repl-1.4.0.tgz#aa0ce8f14b686691286c8a407a3f592d3c724d5e"
+  integrity sha512-jlvD9Y0T0+h0FlWGqZ1F5mPk91gTWgkOwkLWj2WRdExngxMUX4XJJE46h6in+WIF6tIF7YI7WHtjeOubRTx5+g==
+
 prop-types@^15.6.2, prop-types@^15.8.1:
   version "15.8.1"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.8.1.tgz#67d87bf1a694f48435cf332c24af10214a3140b5"
