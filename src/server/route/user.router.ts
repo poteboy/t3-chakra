@@ -9,7 +9,7 @@ export const uesrRouter = createRouter().mutation("register-user", {
   resolve: async ({ ctx, input }) => {
     const { email, name } = input;
     try {
-      const user = await ctx.prisma.user.create({
+      const user = await ctx.prisma.default?.user.create({
         data: {
           email,
         },

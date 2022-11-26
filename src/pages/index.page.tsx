@@ -11,9 +11,11 @@ import {
   FormErrorMessage,
 } from "@chakra-ui/react";
 import { useEffect } from "react";
+import { TextInput } from "@src/components/general";
 
 export default function Home() {
   const {
+    control,
     register,
     watch,
     formState: { errors },
@@ -24,23 +26,12 @@ export default function Home() {
 
   const name = watch("name");
 
-  useEffect(() => {
-    console.log(name);
-    console.log(errors.name);
-  }, [name]);
-
   const { mutate } = useMutation(["users.register-user"]);
 
   return (
     <Container flex={1} minH="100vh">
       <VStack justify="center" m="auto" flex={1}>
-        <FormControl>
-          <FormLabel htmlFor="name">Name</FormLabel>
-          <Input id="name" {...register("name")} />
-          <FormErrorMessage>
-            {errors.name && errors.name.message}
-          </FormErrorMessage>
-        </FormControl>
+        <TextInput label="hello" control={control} name="name" />
       </VStack>
     </Container>
   );
